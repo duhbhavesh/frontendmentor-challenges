@@ -33,16 +33,48 @@ body {
 	margin: 50px auto;
 }
 
-.tools {
+.tools-section {
 	display: flex;
 	align-items: center;
-	width: 300px;
-	height: 300px;
-	border: 1px solid #fff;
+	width: 350px;
+	height: 200px;
+	/* border: 1px solid #fff; */
+	flex-wrap: wrap;
+	flex-direction: row;
+	background-color: var(--darkBlue);
+	border-radius: 10px;
+	border-top-right-radius: 100px;
+	margin: 30px;
+}
+
+ul,
+.logo {
+	/* border: 1px solid #fff; */
+	margin: 10px 10px;
+}
+
+ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 200px;
+}
+
+ul li {
+	width: 40px;
+	height: 40px;
+	border-radius: 5px;
+	align-items: center;
+	background-color: var(--veryDarkBlue);
+	/* border: 1px solid #fff; */
+	padding: 5px;
+	margin: auto 10px;
 }
 
 .storage {
-	width: 300px;
-	height: 300px;
+	width: 500px;
+	height: 180px;
 	border: 1px solid #fff;
+	background-color: var(--darkBlue);
 }
