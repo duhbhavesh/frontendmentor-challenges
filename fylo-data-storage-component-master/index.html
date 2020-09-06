@@ -19,15 +19,34 @@
 		<div class="container">
 			<div class="tools-section">
 				<img class="logo" src="/images/logo.svg" alt="" />
-				<ul>
-					<li><img src="images/icon-document.svg" alt="" /></li>
-					<li><img src="images/icon-folder.svg" alt="" /></li>
-					<li><img src="images/icon-upload.svg" alt="" /></li>
+				<ul class="tools-icons">
+					<li class="tools-icon">
+						<img src="images/icon-document.svg" alt="" />
+					</li>
+					<li class="tools-icon">
+						<img src="images/icon-folder.svg" alt="" />
+					</li>
+					<li class="tools-icon">
+						<img src="images/icon-upload.svg" alt="" />
+					</li>
 				</ul>
 			</div>
-			<div class="storage">
-				<p>You’ve used 815 GB of your storage <span>185 GB Left</span></p>
-				<div class="limit">0 GB 1000 GB</div>
+
+			<div class="storage-section">
+				<label for="storage-limit" class="storage-progress-label"
+					>You’ve used <b>815 GB</b> of your storage</label
+				>
+				<progress
+					id="storage-limit"
+					value="80"
+					max="100"
+					class="storage-progress-bar"
+				></progress>
+				<div class="limit">
+					<div class="min-limit"><b>0 GB</b></div>
+					<div class="max-limit"><b>1000 GB</b></div>
+				</div>
+				<p class="storage-left">185 <span>GB Left</span></p>
 			</div>
 		</div>
 

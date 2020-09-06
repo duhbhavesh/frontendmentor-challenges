@@ -7,74 +7,196 @@
 	--veryDarkBlue: hsl(229, 57%, 11%);
 }
 
-* {
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-}
-
 body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	color: #fff;
+	height: 100vh;
 	background-color: var(--veryDarkBlue);
 	background-image: url(/images/bg-desktop.png);
 	background-position: bottom;
 	background-repeat: no-repeat;
-	font-family: 'Raleway', sans-serif;
-	color: #fff;
-	height: 100vh;
+	background-size: 100%;
 }
 
 .container {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	padding: 0 15px 0 15px;
+	/* align-items: center;
 	flex-wrap: wrap;
 	max-width: 1200px;
 	height: 500px;
-	margin: 50px auto;
+	margin: 50px auto; */
 }
 
 .tools-section {
-	display: flex;
-	align-items: center;
-	width: 350px;
-	height: 200px;
-	/* border: 1px solid #fff; */
-	flex-wrap: wrap;
-	flex-direction: row;
 	background-color: var(--darkBlue);
 	border-radius: 10px;
 	border-top-right-radius: 100px;
-	margin: 30px;
+	margin-bottom: 18px;
+	padding: 40px;
 }
 
-ul,
 .logo {
-	/* border: 1px solid #fff; */
-	margin: 10px 10px;
+	margin-bottom: 15px;
 }
 
-ul {
-	list-style: none;
+.tools-icons {
 	display: flex;
-	flex-direction: row;
-	align-items: center;
-	width: 200px;
+	margin-top: 20px;
 }
 
-ul li {
-	width: 40px;
-	height: 40px;
-	border-radius: 5px;
+.tools-icon {
+	display: flex;
+	justify-content: center;
 	align-items: center;
+	width: 50px;
+	height: 50px;
+	border-radius: 8px;
 	background-color: var(--veryDarkBlue);
 	/* border: 1px solid #fff; */
-	padding: 5px;
-	margin: auto 10px;
 }
 
-.storage {
-	width: 500px;
-	height: 180px;
-	border: 1px solid #fff;
+li:nth-last-of-type() {
+	margin-right: 20px;
+}
+
+.storage-section {
+	position: relative;
+	height: 100px;
 	background-color: var(--darkBlue);
+	border-radius: 10px;
+	padding: 30px 40px 50px 30px;
+	border: 1px solid #fff;
+}
+
+.storage-progress-label {
+	display: inline-block;
+	margin-bottom: 15px;
+	width: 100%;
+	text-align: center;
+}
+
+.storage-progress-bar {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: 22px;
+	border-radius: 10px;
+	background-color: var(--veryDarkBlue);
+	border: none;
+}
+
+.storage-progress-bar::before {
+	content: '';
+	position: absolute;
+	top: 4.25px;
+	right: 46.75px;
+	width: 14.5px;
+	height: 14.5px;
+	border-radius: 50%;
+	background-color: #fff;
+}
+
+.storage-progress-bar::-webkit-progress-bar {
+	height: 20px;
+	background-color: var(--veryDarkBlue);
+	border-radius: 10px;
+}
+
+.storage-progress-bar::-webkit-progress-value {
+	margin-top: 3px;
+	margin-right: 3.5px;
+	height: 18px;
+	border-radius: 10px;
+	background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+
+.storage-progress-bar::-webkit-progress-value::before {
+	content: '';
+	width: 100px;
+	height: 100px;
+	background-color: #fff;
+	position: absolute;
+	right: 0;
+	top: -125%;
+}
+
+.limit {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	margin-top: 10px;
+}
+
+.storage-left {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: translateY(-50%);
+	width: 200px;
+	height: 85px;
+	left: 50%;
+	bottom: -88px;
+	font-size: 45px;
+	font-weight: 700;
+	color: #000000;
+	background-color: #fff;
+}
+
+.storage-left span {
+	font-size: 14px;
+	color: var(--paleBlue);
+	margin-left: 10px;
+	text-transform: uppercase;
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1300px) {
+	body {
+		background-image: url(/images/bg-desktop.png);
+		background-position: bottom;
+		background-repeat: no-repeat;
+		background-size: 100% 50%;
+		background-color: var(--veryDarkBlue);
+	}
+
+	.container {
+		justify-content: center;
+		flex-direction: row;
+		align-items: flex-end;
+	}
+
+	.tools-section {
+		margin-bottom: 0;
+		margin-right: 25px;
+		width: 250px;
+	}
+
+	.storage-left {
+		transform: translateX(50%);
+		top: -105px;
+		left: 230px;
+	}
+
+	.storage-left::before {
+		content: '';
+		position: absolute;
+		bottom: -20px;
+		right: 0;
+		clip-path: polygon(0 0, 100% 0, 100% 100%);
+		height: 50px;
+		width: 50px;
+		background-color: #fff;
+	}
+
+	.storage-progress-label {
+		text-align: left;
+	}
 }
