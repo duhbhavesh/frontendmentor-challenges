@@ -11,3 +11,7 @@
 .attribution a {
 	color: hsl(228, 45%, 44%);
 }
+
+.header-area {
+	background-image: url(/images/bg-hero-desktop.svg);
+}
