@@ -14,4 +14,15 @@
 
 .header-area {
 	background-image: url(/images/bg-hero-desktop.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
 }
+/* 
+.navbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border: 1px solid #000;
+} */
