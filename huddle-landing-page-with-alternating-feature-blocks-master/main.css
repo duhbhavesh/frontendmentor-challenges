@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
 }
 
 .attribution {
@@ -25,5 +32,23 @@
 	height: 80px;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	padding: 40px;
+	margin-top: 20px;
+}
+
+.navbar-cta a {
+	text-decoration: none;
+	padding: 10px 50px 10px 50px;
+	border-radius: 20px;
+	background-color: #fff;
+	box-shadow: 0 10px 22px rgba(0, 0, 0, 0.07);
+	font-weight: 700;
+}
+
+.hero {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
 	align-items: center;
 }
