@@ -18,31 +18,27 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
-.attribution {
-	font-size: 11px;
-	text-align: center;
-}
-.attribution a {
-	color: hsl(228, 45%, 44%);
+.page {
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .header-area {
 	background-image: url(/images/bg-hero-desktop.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	display: flex;
-	flex-wrap: wrap;
+	border: 1px solid #000;
 }
 
-.navbar {
+/* .navbar {
 	width: 100%;
 	height: 80px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 40px;
+	padding: 45px;
 	margin-top: 15px;
-}
+} */
 
 .navbar-cta a {
 	text-decoration: none;
@@ -54,45 +50,44 @@ body {
 	color: #000000;
 }
 
-.hero {
-	width: 100%;
+/* .hero {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	border: 1px solid #000;
 }
 
 .hero-content {
-	width: 60%;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	padding: 10px;
-}
+} */
 
 .hero-content h1 {
 	font-size: 30px;
 	font-weight: 600;
-	margin: 20px 35px;
-}
-
-.hero-content p {
-	margin: 10px 35px;
 }
 
 .hero-content a {
-	margin: 20px 35px;
-	padding: 10px;
 	text-decoration: none;
 	border-radius: 40px;
 	background-color: var(--pink);
 	font-weight: 700;
 	color: #fff;
-	width: 60%;
-	height: 50px;
 	text-align: center;
 }
 
-.hero-image img {
-	width: 80%;
-	max-height: 80%;
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 961px) {
+	.page {
+		width: 1200px;
+		margin: 0 auto;
+	}
 }
