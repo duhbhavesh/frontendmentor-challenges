@@ -42,8 +42,8 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	padding: 1.5em;
-	margin-top: 1em;
+	padding: 1.5rem;
+	margin-top: 1rem;
 }
 
 .navbar-cta a {
@@ -92,5 +92,6 @@ body {
 		width: 100%;
 		align-items: center;
 		border: 1px solid;
+		margin: 0 auto;
 	}
 }
