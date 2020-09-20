@@ -32,9 +32,9 @@ body {
 
 .header-area {
 	background-image: url(/images/bg-hero-desktop.svg);
+	background-color: var(--veryPaleCyan);
 	background-repeat: no-repeat;
 	background-size: cover;
-	border: 1px solid #000;
 }
 
 .navbar {
@@ -56,14 +56,6 @@ body {
 	color: #000000;
 }
 
-.hero-content {
-	margin-left: auto;
-}
-
-.hero-image {
-	margin-right: auto;
-}
-
 .hero-content a {
 	text-decoration: none;
 	border-radius: 40px;
@@ -71,6 +63,10 @@ body {
 	font-weight: 700;
 	color: #fff;
 	text-align: center;
+}
+
+.hero-image img {
+	max-width: 400px;
 }
 
 .attribution {
@@ -86,12 +82,24 @@ body {
 		margin: 0 auto;
 	}
 
+	.navbar-brand > img:nth-child(1) {
+		margin-left: 3rem;
+	}
+
+	.navbar-cta > a:nth-child(1) {
+		margin-right: 3rem;
+	}
+
 	.hero {
 		display: flex;
 		justify-content: space-around;
-		width: 100%;
+		width: 90%;
 		align-items: center;
-		border: 1px solid;
 		margin: 0 auto;
+		margin-top: 2rem;
+	}
+
+	.hero-image img {
+		max-width: 700px;
 	}
 }
