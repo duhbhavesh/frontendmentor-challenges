@@ -161,6 +161,78 @@ h1 {
 	background-color: var(--veryDarkCyan);
 }
 
+.footer-content {
+	color: #fff;
+	padding: 2rem;
+}
+
+.contact {
+	margin-bottom: 3rem;
+}
+
+.contact-icon {
+	margin-right: 1.5rem;
+}
+
+.contact-icon img {
+	width: 18px;
+}
+
+.footor-brand > img:nth-child(1) {
+	width: 200px;
+}
+
+.footor-brand {
+	margin-bottom: 2rem;
+}
+
+.contact-details {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 1.3rem;
+}
+
+.contact-info a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.contact-info p {
+	padding-right: 1.5rem;
+}
+
+.sitemap {
+	line-height: 2.3;
+	font-size: 1.2rem;
+	list-style: none;
+}
+
+.sitemap-links {
+	list-style: none;
+}
+
+.social-icons {
+	display: flex;
+	justify-content: center;
+}
+
+.social-icon {
+	margin-top: 2rem;
+	margin-right: 1rem;
+}
+
+.social-icon {
+	border: 1px solid;
+	border-radius: 50%;
+	padding: 0.5rem;
+}
+
+.copyright {
+	text-align: center;
+	margin-top: 1.2rem;
+	margin-bottom: 4rem;
+}
+
 .attribution {
 	font-size: 11px;
 	text-align: center;
