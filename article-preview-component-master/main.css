@@ -24,6 +24,7 @@ main {
 .article {
 	border-radius: 1rem;
 	background-color: #fff;
+	padding-bottom: 2rem;
 }
 
 .article-image img {
@@ -47,4 +48,14 @@ main {
 	margin-bottom: 2rem;
 	line-height: 1.5;
 	color: var(--desaturatedDarkBlue);
+}
+
+.author-image img {
+	width: 70px;
+	border-radius: 50%;
+}
+
+.author-details {
+	display: flex;
+	justify-content: space-around;
 }
