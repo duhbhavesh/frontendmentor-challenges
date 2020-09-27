@@ -18,6 +18,10 @@ body {
 	background-color: var(--lightGrayishBlue);
 }
 
+img {
+	max-width: 100%;
+}
+
 main {
 	padding: 2rem;
 }
@@ -73,9 +77,14 @@ main {
 		border: 1px solid;
 		margin: 0 auto;
 		width: 50%;
+		padding-bottom: 0rem;
 	}
 
-	.article-image img {
-		max-width: 100%;
+	.article-image {
+		width: 30%;
+	}
+
+	.article-details {
+		width: 70%;
 	}
 }
