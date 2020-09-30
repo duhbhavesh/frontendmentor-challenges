@@ -16,45 +16,46 @@
 		<title>Frontend Mentor | Article preview component</title>
 	</head>
 	<body>
-		<div class="card">
-			<div class="card__image">
-				<img src="/images/drawers.jpg" alt="" />
-			</div>
-			<div class="card__content">
-				<h1 class="card__content--title">
-					Shift the overall look and feel by adding these wonderful touches to
-					furniture in your home
-				</h1>
-				<p class="card__content--para">
-					Ever been in a room and felt like something was missing? Perhaps it
-					felt slightly bare and uninviting. I’ve got some simple tips to help
-					you make any room feel complete.
-				</p>
-				<div class="card__content__user">
-					<img
-						src="./images/avatar-michelle.jpg"
-						alt=""
-						class="card__content__user__avatar"
-					/>
-					<div class="card__content__user__details">
-						<h3 class="card__content__user__details--author">
-							Michelle Appleton
-						</h3>
-						<h5 class="card__content__user__details--date">28 Jun 2020</h5>
-					</div>
-					<div class="card__content__user__share">
-						<div class="card__content__user__share__panel" id="share_panel">
-							<p>Share</p>
-							<img src="/images/icon-facebook.svg" alt="" />
-							<img src="/images/icon-twitter.svg" alt="" />
-							<img src="/images/icon-pinterest.svg" alt="" />
+		<div class="container">
+			<div class="card">
+				<div class="card__image"></div>
+				<div class="card__content">
+					<h1 class="card__content--title">
+						Shift the overall look and feel by adding these wonderful touches to
+						furniture in your home
+					</h1>
+					<p class="card__content--para">
+						Ever been in a room and felt like something was missing? Perhaps it
+						felt slightly bare and uninviting. I’ve got some simple tips to help
+						you make any room feel complete.
+					</p>
+					<div class="card__content__user">
+						<img
+							src="./images/avatar-michelle.jpg"
+							alt=""
+							class="card__content__user__avatar"
+						/>
+						<div class="card__content__user__details">
+							<h3 class="card__content__user__details--author">
+								Michelle Appleton
+							</h3>
+							<h5 class="card__content__user__details--date">28 Jun 2020</h5>
 						</div>
-						<div
-							class="card__content__user__share__button"
-							id="share_btn"
-							onclick="{toggleShare()}"
-						>
-							<img src="/images/icon-share.svg" alt="" />
+
+						<div class="card__content__user__share">
+							<div class="card__content__user__share__panel" id="share_panel">
+								<p>Share</p>
+								<img src="/images/icon-facebook.svg" alt="" />
+								<img src="/images/icon-twitter.svg" alt="" />
+								<img src="/images/icon-pinterest.svg" alt="" />
+							</div>
+							<div
+								class="card__content__user__share__button"
+								id="share_btn"
+								onclick="{toggleShare()}"
+							>
+								<img src="/images/icon-share.svg" alt="" />
+							</div>
 						</div>
 					</div>
 				</div>
@@ -67,5 +68,6 @@
 				>Frontend Mentor</a
 			>. Coded by <a href="#">Your Name Here</a>.
 		</div> -->
+		<script src="main.js"></script>
 	</body>
 </html>
