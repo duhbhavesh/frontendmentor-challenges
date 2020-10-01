@@ -108,6 +108,23 @@ img {
 	margin: 0 auto;
 }
 
+.footer {
+	background-color: antiquewhite;
+}
+
+.footer__sitemap__links {
+	list-style: none;
+	margin-bottom: 2rem;
+}
+
+.social__icons {
+	border: 1px solid;
+	display: flex;
+	list-style: none;
+	margin: 0 auto;
+	width: 40%;
+}
+
 @media only screen and (min-width: 650px) {
 	.hero__cta {
 		width: 30%;
@@ -144,7 +161,41 @@ img {
 		display: flex;
 		margin: 0 auto;
 		border: 1px solid;
-		justify-content: center;
+		justify-content: space-around;
 		align-items: center;
+	}
+
+	.subscription__input__field {
+		width: 61%;
+		border: 1px solid;
+	}
+
+	.subscription__input__field input {
+		width: 100%;
+	}
+
+	.subscription__submit__btn {
+		width: 32%;
+		border: 1px solid;
+	}
+
+	.subscription__submit__btn a {
+		width: 100%;
+	}
+
+	.footer__details {
+		display: flex;
+		margin: 0 auto;
+		border: 1px solid;
+		margin-bottom: 2rem;
+		justify-content: space-between;
+	}
+
+	.footer__sitemap {
+		display: flex;
+	}
+
+	.social__icons {
+		width: 100%;
 	}
 }
