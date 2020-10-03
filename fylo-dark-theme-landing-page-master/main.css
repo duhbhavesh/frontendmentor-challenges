@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+:root {
+	--bodyColor: hsl(0, 0%, 100%);
+
+	--darkBlueintro-email: hsl(217, 28%, 15%);
+	--darkBluemain: hsl(218, 28%, 13%);
+	--darkBluefooter: hsl(216, 53%, 9%);
+	--darkBlutestimonials: hsl(219, 30%, 18%);
+
+	--cyancta: hsl(176, 68%, 64%);
+	--bluecta: hsl(198, 60%, 50%);
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -12,30 +26,61 @@ img {
 	max-width: 100%;
 }
 
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: var(--bodyColor);
+}
+
+h1,
+h2,
+h3,
+h4,
+.navbar__links {
+	font-family: 'Raleway', sans-serif;
+}
+
 .container {
 	width: 90%;
 	margin: 0 auto;
+}
+
+.intro {
+	padding-top: 3rem;
+	background-color: var(--darkBlueintro-email);
 }
 
 .navbar {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border: 1px solid;
+	/* border: 1px solid; */
 }
 
 .navbar__links {
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	list-style: none;
-	border: 1px solid;
+	/* border: 1px solid; */
+}
+
+#navbar__brand {
+	width: 60%;
 }
 
 .navbar__link + .navbar__link {
 	margin-left: 2rem;
 }
 
+/* .hero__text {
+	background-image: url(/images/bg-curvy-mobile.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+} */
+
 .hero__content {
-	border: 1px solid;
+	/* border: 1px solid; */
 	margin-top: 2rem;
 	text-align: center;
 }
@@ -45,10 +90,14 @@ img {
 	display: block;
 	text-decoration: none;
 	padding: 1rem;
-	border: 1px solid;
+	/* border: 1px solid; */
 	border-radius: 40px;
 	margin: 0 auto;
 	margin-top: 1.5rem;
+}
+
+.main {
+	background-color: var(--darkBluemain);
 }
 
 .service__items {
@@ -61,14 +110,14 @@ img {
 }
 
 .testinomials__content {
-	border: 1px solid;
+	/* border: 1px solid; */
 	margin-top: 2rem;
 	display: flex;
 	flex-direction: column;
 }
 
 .testinomials__item {
-	border: 1px solid;
+	/* border: 1px solid; */
 }
 
 .testinomial__person {
@@ -81,7 +130,7 @@ img {
 }
 
 .subscription__cta__details {
-	border: 1px solid;
+	/* border: 1px solid; */
 	margin: 0 auto;
 	margin-top: 2rem;
 	text-align: center;
@@ -89,7 +138,7 @@ img {
 }
 
 .subscription__input__field input {
-	border: 1px solid;
+	/* border: 1px solid; */
 	border-radius: 40px;
 	padding: 1rem;
 	width: 80%;
@@ -98,7 +147,7 @@ img {
 .subscription__submit__btn a {
 	display: block;
 	text-decoration: none;
-	border: 1px solid;
+	/* border: 1px solid; */
 	border-radius: 40px;
 	padding: 1rem;
 }
@@ -109,7 +158,8 @@ img {
 }
 
 .footer {
-	background-color: antiquewhite;
+	background-color: var(--darkBluefooter);
+	padding-top: 8rem;
 }
 
 .footer__sitemap__links {
@@ -118,14 +168,42 @@ img {
 }
 
 .social__icons {
-	border: 1px solid;
+	/* border: 1px solid; */
 	display: flex;
 	list-style: none;
 	margin: 0 auto;
 	width: 40%;
 }
 
+.subscribtion__cta {
+	transform: translateY(50%);
+}
+
 @media only screen and (min-width: 650px) {
+	/* .hero__text {
+		background-image: url(/images/bg-curvy-desktop.svg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: bottom;
+	} */
+
+	.intro {
+		padding-top: 5rem;
+	}
+
+	#navbar__brand {
+		width: 100%;
+	}
+
+	.navbar__link + .navbar__link {
+		margin-left: 4rem;
+	}
+
+	.hero__text {
+		width: 50%;
+		margin: 0 auto;
+	}
+
 	.hero__cta {
 		width: 30%;
 	}
@@ -133,7 +211,7 @@ img {
 	.service__items {
 		display: flex;
 		flex-wrap: wrap;
-		border: 1px solid;
+		/* border: 1px solid; */
 		width: 80%;
 		margin: 0 auto;
 		margin-top: 2rem;
@@ -146,7 +224,7 @@ img {
 	.productive__details {
 		display: flex;
 		align-items: center;
-		border: 1px solid;
+		/* border: 1px solid; */
 	}
 
 	.testinomials__content {
@@ -160,14 +238,14 @@ img {
 	.subscription__cta__form {
 		display: flex;
 		margin: 0 auto;
-		border: 1px solid;
+		/* border: 1px solid; */
 		justify-content: space-around;
 		align-items: center;
 	}
 
 	.subscription__input__field {
 		width: 61%;
-		border: 1px solid;
+		/* border: 1px solid; */
 	}
 
 	.subscription__input__field input {
@@ -176,7 +254,7 @@ img {
 
 	.subscription__submit__btn {
 		width: 32%;
-		border: 1px solid;
+		/* border: 1px solid; */
 	}
 
 	.subscription__submit__btn a {
@@ -186,7 +264,7 @@ img {
 	.footer__details {
 		display: flex;
 		margin: 0 auto;
-		border: 1px solid;
+		/* border: 1px solid; */
 		margin-bottom: 2rem;
 		justify-content: space-between;
 	}
