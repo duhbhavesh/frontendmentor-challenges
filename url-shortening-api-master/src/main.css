@@ -69,6 +69,43 @@ img {
 	background-color: var(--Cyan);
 }
 
+#hero {
+	margin-bottom: 6rem;
+}
+
+.url__form {
+	display: flex;
+	border: 1px solid;
+	width: 70%;
+	margin: 0 auto;
+	padding: 3rem 2rem;
+}
+
+.shorten__url--form {
+	width: 100%;
+	border: 1px solid;
+}
+
+.shorten__link--input {
+	width: 70%;
+	padding: 1rem 1rem;
+	border-radius: 10px;
+	border-style: none;
+	background-color: rosybrown;
+}
+
+.shorten__link--submit {
+	text-decoration: none;
+	cursor: pointer;
+	padding: 1rem 1rem;
+	border-radius: 10px;
+	color: #fff;
+	width: 25%;
+	text-align: center;
+	border-style: none;
+	background-color: var(--Cyan);
+}
+
 @media only screen and (min-width: 961px) {
 	body {
 		margin: 0 auto;
