@@ -78,6 +78,7 @@ img {
 .hero__content {
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 10rem;
 }
 
 .hero__text {
@@ -108,6 +109,7 @@ img {
 	margin: 0 auto;
 	padding: 2rem 2rem;
 	width: 100%;
+	transform: translateY(-50%);
 	border-radius: 10px;
 	background-image: url(/images/bg-shorten-mobile.svg);
 	background-repeat: no-repeat;
@@ -140,6 +142,65 @@ img {
 	margin-bottom: 0.5rem;
 	font-size: 1rem;
 	font-weight: 600;
+}
+
+#statistics {
+	background-color: rgb(239, 241, 247);
+}
+
+.statistics__text {
+	text-align: center;
+}
+
+.statistics__text h2 {
+	margin-bottom: 1rem;
+	color: var(--DarkViolet);
+}
+
+.statistics__text p {
+	color: var(--GrayishViolet);
+}
+
+.statistics__cards {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 8rem;
+}
+
+.statistics__card {
+	background-color: #fff;
+	margin-top: 5rem;
+	padding: 2rem;
+	border-radius: 10px;
+}
+
+.card__img {
+	background-color: var(--DarkViolet);
+	width: 28%;
+	padding: 1rem;
+	text-align: center;
+	border-radius: 50%;
+	transform: translateY(-80%);
+	margin: 0 auto;
+}
+
+.card__img img {
+	width: 80%;
+}
+
+.card__text {
+	text-align: center;
+	margin-top: -2rem;
+}
+
+.card__text h3 {
+	color: var(--DarkViolet);
+	margin-bottom: 1rem;
+}
+
+.card__text p {
+	color: var(--GrayishViolet);
+	font-size: 1rem;
 }
 
 @media only screen and (min-width: 961px) {
@@ -227,5 +288,25 @@ img {
 	.shorten__link--submit {
 		width: 15%;
 		margin-right: 1.5rem;
+	}
+
+	.statistics__text h2 {
+		font-size: 2.5rem;
+	}
+
+	.statistics__text p {
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	.statistics__cards {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		justify-content: space-around;
+	}
+
+	.statistics__card {
+		width: 30%;
 	}
 }
