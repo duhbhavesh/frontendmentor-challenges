@@ -28,9 +28,14 @@ img {
 .attribution {
 	font-size: 11px;
 	text-align: center;
+	background-color: rgb(35, 32, 39);
+	opacity: 0.9;
+	color: #fff;
+	padding: 0.5rem;
 }
+
 .attribution a {
-	color: hsl(228, 45%, 44%);
+	color: var(--Cyan);
 }
 
 .container {
@@ -60,14 +65,17 @@ img {
 	font-weight: 600;
 }
 
-.cta__hero {
+.cta__hero,
+.cta__footer--btn {
+	display: block;
 	text-decoration: none;
 	cursor: pointer;
-	padding: 0.5rem 2rem;
+	padding: 1rem 2rem;
 	border-radius: 30px;
 	color: #fff;
-	width: 45%;
+	width: 70%;
 	text-align: center;
+	margin: 0 auto;
 	background-color: var(--Cyan);
 }
 
@@ -203,6 +211,64 @@ img {
 	font-size: 1rem;
 }
 
+#footer__cta {
+	background-image: url(/images/bg-boost-mobile.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: var(--DarkViolet);
+	padding: 4rem 0 6rem 0;
+}
+
+.cta__footer--text h2 {
+	color: #fff;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.cta__footer--btn {
+	margin: 0 auto;
+}
+
+#footer {
+	background-color: rgb(35, 32, 39);
+	color: #fff;
+	text-align: center;
+	padding: 2rem 0 8rem 0;
+}
+
+.footer__logo {
+	margin-bottom: 2rem;
+}
+
+.footer__logo img {
+	fill: red;
+}
+
+.footer__links h4 {
+	margin-bottom: 1.5rem;
+}
+
+.footer__social {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.footer__sitemap {
+	margin-bottom: 3rem;
+}
+
+.footer__icons {
+	display: flex;
+	list-style: none;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.footer__link {
+	color: var(--GrayishViolet);
+	margin-bottom: 0.5rem;
+}
+
 @media only screen and (min-width: 961px) {
 	body {
 		margin: 0 auto;
@@ -267,7 +333,8 @@ img {
 	}
 
 	.cta__hero {
-		width: 100%;
+		width: 35%;
+		margin: 0;
 	}
 
 	.shorten__url--form {
@@ -308,5 +375,38 @@ img {
 
 	.statistics__card {
 		width: 30%;
+	}
+
+	#footer__cta {
+		background-image: url(/images/bg-boost-desktop.svg);
+	}
+
+	.cta__footer--btn {
+		width: 18%;
+	}
+
+	.cta__footer--text h2 {
+		font-size: 2.5rem;
+	}
+
+	.footer__sitemap--main {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	.footer__sitemap--links {
+		display: flex;
+		width: 50%;
+		justify-content: space-around;
+	}
+
+	.footer__sitemap {
+		text-align: left;
+	}
+
+	.footer__social {
+		width: 16%;
+		margin: 0;
 	}
 }
