@@ -22,3 +22,7 @@ body {
 .attribution a {
 	color: hsl(228, 45%, 44%);
 }
+
+#mapid {
+	height: 180px;
+}
