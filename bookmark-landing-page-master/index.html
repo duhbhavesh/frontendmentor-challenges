@@ -12,6 +12,7 @@
 			href="./images/favicon-32x32.png"
 		/>
 		<link rel="stylesheet" href="style.css" />
+		<script src="main.js" defer></script>
 		<title>Frontend Mentor | Bookmark landing page</title>
 	</head>
 	<body>
@@ -58,93 +59,56 @@
 			</div>
 		</section>
 
-		<section class="features">
+		<section id="features">
 			<div class="container">
 				<div class="features__text">
-					<div class="features__title">
-						<h2 id="features__title">Features</h2>
-					</div>
-					<div class="features__para">
-						<p id="features__para">
-							Features Our aim is to make it quick and easy for you to access
-							your favourite websites. Your bookmarks sync between your devices
-							so you can access them on the go.
-						</p>
-					</div>
+					<h2 class="features__title">Features</h2>
+					<p class="features__para">
+						Our aim is to make it quick and easy for you to access your
+						favourite websites. Your bookmarks sync between your devices so you
+						can access them on the go.
+					</p>
 				</div>
-				<div class="features__tabs">
-					<div class="tab">
-						<input
-							type="radio"
-							name="tabgroup"
-							id="simple__bookmarking tab__title"
-							checked
-						/>
-						<label for="simple__bookmarking">Simple Bookmarking</label>
-						<div class="content">
-							<div class="features__img">
-								<img src="" alt="" id="features__img" />
-							</div>
-							<div class="features__tab--text">
-								<h2 class="features__tab--title">Bookmark in one click</h2>
-								<p class="features__tab--para">
-									Organize your bookmarks however you like. Our simple
-									drag-and-drop interface gives you complete control over how
-									you manage your favourite sites.
-								</p>
-								<a href="#" id="features__tab--btn">More info</a>
-							</div>
+
+				<ul class="feature__list">
+					<li class="feature__item">
+						<button href="#" class="feature__link bookmark current">
+							Simple Bookmarking
+						</button>
+					</li>
+					<li class="feature__item">
+						<button href="#" class="feature__link searching">
+							Speedy Searching
+						</button>
+					</li>
+					<li class="feature__item">
+						<button href="#" class="feature__link sharing">Easy Sharing</button>
+					</li>
+				</ul>
+				<div class="container">
+					<div class="feature__hero">
+						<div class="feature__left">
+							<img
+								src="./images/illustration-features-tab-1.svg"
+								alt=""
+								class="feature__img"
+							/>
 						</div>
-					</div>
-					<div class="tab">
-						<input
-							type="radio"
-							name="tabgroup"
-							id="speedy__searching tab__title"
-							checked
-						/>
-						<label for="speedy__searching">Speedy Searching</label>
-						<div class="content">
-							<div class="features__img">
-								<img src="" alt="" id="features__img" />
-							</div>
-							<div class="features__tab--text">
-								<h2 class="features__tab--title">Intelligent search</h2>
-								<p class="features__tab--para">
-									Our powerful search feature will help you find saved sites in
-									no time at all. No need to trawl through all of your
-									bookmarks.
-								</p>
-								<a href="#" id="features__tab--btn">More info</a>
-							</div>
-						</div>
-					</div>
-					<div class="tab">
-						<input
-							type="radio"
-							name="tabgroup"
-							id="easy__sharing tab__title"
-							checked
-						/>
-						<label for="easy__sharing">Easy Sharing</label>
-						<div class="content">
-							<div class="features__img">
-								<img src="" alt="" id="features__img" />
-							</div>
-							<div class="features__tab--text">
-								<h2 class="features__tab--title">Share your bookmarks</h2>
-								<p class="features__tab--para">
-									Easily share your bookmarks and collections with others.
-									Create a shareable link that you can send at the click of a
-									button.
-								</p>
-								<a href="#" id="features__tab--btn">More info</a>
-							</div>
+						<div class="feature__right">
+							<h2 class="feature__title">Bookmark in one click</h2>
+							<p class="feature__desc">
+								Organize your bookmarks however you like. Our simple
+								drag-and-drop interface gives you complete control over how you
+								manage your favourite sites.
+							</p>
+
+							<a href="#" class="feature__btn">More info</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+
 		<section id="downloads">
 			<div class="container">
 				<div class="downloads__title">
