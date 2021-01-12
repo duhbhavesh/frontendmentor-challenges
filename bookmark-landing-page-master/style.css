@@ -34,6 +34,22 @@ img {
 	margin-top: 2rem;
 }
 
+.hero::after {
+	content: '';
+	display: block;
+	position: absolute;
+	right: 0;
+	-webkit-transform: translateY(-10%);
+	-ms-transform: translateY(-10%);
+	transform: translateY(-10%);
+	background-color: var(--softBlue);
+	z-index: -1;
+	border-radius: 50% 0 0 50%;
+	top: 42%;
+	width: 18rem;
+	height: 12rem;
+}
+
 .nav__links {
 	list-style: none;
 	text-transform: uppercase;
@@ -53,11 +69,12 @@ img {
 .hero__content {
 	text-align: center;
 	display: flex;
-	flex-direction: column;
+	flex-direction: column-reverse;
 }
 
 .title__hero {
 	color: var(--veryDarkBlue);
+	margin-top: 3rem;
 	margin-bottom: 1.5rem;
 }
 
@@ -104,6 +121,20 @@ img {
 	margin-top: 4rem;
 	position: relative;
 	margin-bottom: 4rem;
+}
+
+#features::after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	transform: translateY(0%);
+	background-color: #5368df;
+	z-index: -1;
+	border-radius: 0 50% 50% 0;
+	top: 52%;
+	width: 24rem;
+	height: 14rem;
 }
 
 .features__title {
@@ -164,14 +195,14 @@ img {
 	content: '';
 	display: block;
 	position: absolute;
-	top: 55%;
 	left: 0;
-	width: 33rem;
 	transform: translateY(0%);
-	height: 20rem;
-	background-color: #5368df;
+	background-color: var(--softBlue);
 	z-index: -1;
 	border-radius: 0 50% 50% 0;
+	top: 54%;
+	width: 19rem;
+	height: 11rem;
 }
 
 .feature__img {
@@ -194,9 +225,15 @@ img {
 	color: currentColor;
 }
 
+.feature__single {
+	margin-top: 5rem;
+	padding-bottom: 2rem;
+}
+
 .feature__title {
 	text-align: center;
 	margin-bottom: 1.5rem;
+	color: var(--veryDarkBlue);
 }
 
 .feature__desc {
@@ -327,6 +364,12 @@ img {
 		margin-bottom: 8rem;
 	}
 
+	#features::after {
+		top: 55%;
+		width: 40rem;
+		height: 23rem;
+	}
+
 	.feature__list {
 		border-bottom: 0.2px solid gray;
 	}
@@ -342,6 +385,13 @@ img {
 
 	.feature__desc {
 		text-align: left;
+		width: 75%;
+	}
+
+	.hero::after {
+		top: 40%;
+		width: 30rem;
+		height: 23rem;
 	}
 }
 
