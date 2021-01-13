@@ -521,6 +521,51 @@ img {
 
 #email__cta {
 	margin-top: 4rem;
+	background-color: var(--softBlue);
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+.cta__info {
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing: 4px;
+	font-size: 0.8rem;
+	margin-bottom: 2rem;
+}
+
+.email__cta--title {
+	text-align: center;
+	color: #fff;
+	margin-bottom: 2rem;
+	font-weight: 500;
+	font-size: 1.7rem;
+}
+
+.cta__email--form {
+	display: flex;
+	flex-direction: column;
+	margin-top: 2rem;
+}
+
+.cta__input--form {
+	padding: 0.8rem;
+	flex: 1;
+	border-style: none;
+	border-radius: 5px;
+	margin-bottom: 1rem;
+}
+
+.cta__email--btn {
+	padding: 0.8rem;
+	margin-bottom: 1rem;
+	border-style: none;
+	border-radius: 5px;
+	background-color: var(--softRed);
+	color: #fff;
+	font-family: 'Rubik', sans-serif;
+	cursor: pointer;
 }
 
 @media only screen and (max-width: 800px) {
@@ -698,6 +743,24 @@ img {
 
 	.faq__question {
 		font-size: 1rem;
+	}
+
+	.email__cta--title {
+		width: 40%;
+		margin: 0 auto;
+	}
+
+	.cta__email--form {
+		flex-direction: row;
+		width: 40%;
+		margin: 0 auto;
+		margin-top: 2rem;
+		justify-content: space-around;
+	}
+
+	.cta__email--btn {
+		margin-left: 1rem;
+		padding: 0.8rem 1.5rem 0.8rem 1.5rem;
 	}
 }
 
