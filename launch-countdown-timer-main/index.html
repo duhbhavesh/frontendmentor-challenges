@@ -11,14 +11,71 @@
 			sizes="32x32"
 			href="./images/favicon-32x32.png"
 		/>
-		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="/css/style.css" />
 		<script defer src="main.js"></script>
 		<title>Frontend Mentor | Launch countdown timer</title>
 
 		<style></style>
 	</head>
 	<body>
-		We're launching soon Days Hours Minutes Seconds
+		<div class="container">
+			<main class="main">
+				<h1 class="title" id="title">We're launching soon</h1>
+				<div class="counter" id="counter">
+					<div class="countdown__timer">
+						<div class="container__card">
+							<div id="days" class="base" data-before="08" data-after="">
+								<div class="card">
+									<div class="card__face card__front">08</div>
+									<div class="card__face card__back"></div>
+								</div>
+							</div>
+						</div>
+						<span class="countdown__timer--title">Days</span>
+					</div>
+					<div class="countdown__timer">
+						<div class="container__card">
+							<div id="hours" class="base" data-before="23" data-after="">
+								<div class="card">
+									<div class="card__face card__front">23</div>
+									<div class="card__face card__back"></div>
+								</div>
+							</div>
+						</div>
+						<span class="countdown__timer--title">Hours</span>
+					</div>
+					<div class="countdown__timer">
+						<div class="container__card">
+							<div id="minutes" class="base" data-before="55" data-after="">
+								<div class="card">
+									<div class="card__face card__front">55</div>
+									<div class="card__face card__back"></div>
+								</div>
+							</div>
+						</div>
+						<span class="countdown__timer--title">Minutes</span>
+					</div>
+					<div class="countdown__timer">
+						<div class="container__card">
+							<div id="seconds" class="base" data-before="41" data-after="">
+								<div class="card">
+									<div class="card__face card__front">41</div>
+									<div class="card__face card__back"></div>
+								</div>
+							</div>
+						</div>
+						<span class="countdown__timer--title">Seconds</span>
+					</div>
+				</div>
+			</main>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<img src="./images/icon-facebook.svg" alt="Facebook Icon" />
+				<img src="./images/icon-instagram.svg" alt="Instagram Icon" />
+				<img src="./images/icon-pinterest.svg" alt="Pinterest Icon" />
+			</div>
+		</footer>
 
 		<!-- <div class="attribution">
 			Challenge by
