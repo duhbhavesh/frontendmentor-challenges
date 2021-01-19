@@ -56,6 +56,7 @@ body {
   letter-spacing: 0.2rem;
   text-align: center;
   opacity: 0.75;
+  text-transform: uppercase;
 }
 
 .container__card {
