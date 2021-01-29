@@ -138,6 +138,17 @@ nav {
 	margin-top: -8.5rem;
 }
 
+.hero__title {
+	font-size: 2rem;
+	margin-bottom: 2rem;
+}
+
+.hero__desc {
+	color: $grayishBlue;
+	margin-bottom: 2rem;
+	line-height: 1.5;
+}
+
 @media only screen and (min-width: 770px) {
 	.navbar {
 		justify-content: space-between;
@@ -172,12 +183,8 @@ nav {
 		padding-bottom: 0;
 	}
 
-	.hero__content .hero__img .hero__img--mockup {
-		margin-top: 0;
-	}
-
 	.hero__text {
-		max-width: 55%;
+		max-width: 50%;
 		text-align: left;
 		padding-right: 5rem;
 		padding-top: 12rem;
@@ -190,12 +197,25 @@ nav {
 	.hero__content .hero__img .hero__img--bg {
 		left: 40vw;
 		background-image: url('../images/bg-intro-desktop.svg');
-		background-position: -3rem -13rem;
+		background-position: 0rem -18rem;
 		height: 100%;
 	}
 
 	.hero__content .hero__img .hero__img--mockup {
 		margin-top: -5rem;
-		margin-right: -5rem;
+		margin-right: -10rem;
+	}
+
+	.hero__content .hero__img .hero__img--mock {
+		margin-left: 10rem;
+	}
+
+	.hero__title {
+		width: 80%;
+		font-size: 3rem;
+	}
+
+	.hero__desc {
+		width: 80%;
 	}
 }
