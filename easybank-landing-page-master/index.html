@@ -15,7 +15,34 @@
 	</head>
 	<body>
 		<header>
-			<nav class="navbar container">
+			<nav>
+				<div class="container navbar">
+					<button class="toggle__btn">
+						<img
+							class="toggle__img"
+							src="/images/icon-hamburger.svg"
+							alt="hamburger icon"
+						/>
+					</button>
+					<div class="logo__container">
+						<img src="/images/logo.svg" alt="logo" id="logo" />
+					</div>
+
+					<ul class="nav__links nav__links--mobile">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Careers</a></li>
+					</ul>
+
+					<button type="button" class="cta nav__cta request__btn">
+						Request Invite
+					</button>
+				</div>
+			</nav>
+
+			<!-- <nav class="navbar container">
 				<div class="mobile__nav">
 					<div class="brand__logo">
 						<img src="/images/logo.svg" alt="Logo Image" class="logo" />
@@ -35,26 +62,29 @@
 					<li class="navbar__link">Blog</li>
 					<li class="navbar__link">Careers</li>
 				</ul>
-				<button class="cta nav__cta">Request Invite</button>
-			</nav>
+				<div class="navbar__cta">
+					<button class="cta nav__cta">Request Invite</button>
+				</div>
+			</nav> -->
 		</header>
 		<section id="hero">
-			<div class="container">
-				<div class="hero__content">
-					<div class="hero__text">
-						<h1 class="hero__title">Next generation digital banking</h1>
-						<p class="hero__desc">
-							Take your financial life online. Your Easybank account will be a
-							one-stop-shop for spending, saving, budgeting, investing, and much
-							more.
-						</p>
-						<button class="cta hero__cta">Request Invite</button>
-					</div>
-					<div class="hero__img">
+			<div class="container hero__content">
+				<div class="hero__text">
+					<h1 class="hero__title">Next generation digital banking</h1>
+					<p class="hero__desc">
+						Take your financial life online. Your Easybank account will be a
+						one-stop-shop for spending, saving, budgeting, investing, and much
+						more.
+					</p>
+					<button class="cta hero__cta">Request Invite</button>
+				</div>
+				<div class="hero__img">
+					<div class="hero__img--bg"></div>
+					<div class="hero__img--mockup">
 						<img
 							src="/images/image-mockups.png"
 							alt="Easybank Product Image"
-							class="hero__img--mockup"
+							class="hero__img--mock"
 						/>
 					</div>
 				</div>
