@@ -42,6 +42,8 @@ h6 {
 p {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
+	color: $grayishBlue;
+	line-height: 1.5;
 }
 
 ul {
@@ -140,14 +142,36 @@ nav {
 	}
 
 	&__title {
-		font-size: 2rem;
+		font-size: 2.2rem;
 		margin-bottom: 2rem;
 	}
 
 	&__desc {
-		color: $grayishBlue;
 		margin-bottom: 2rem;
 		line-height: 1.5;
+	}
+}
+
+.features {
+	background-color: $lightGrayishBlue;
+	padding-top: 6rem;
+	padding-bottom: 6rem;
+	text-align: center;
+
+	&__text {
+		margin-bottom: 4rem;
+	}
+
+	&__title {
+		font-size: 2rem;
+	}
+
+	&__card--desc {
+		font-size: 1rem;
+	}
+
+	&__img {
+		margin-bottom: 1.5rem;
 	}
 }
 
@@ -215,11 +239,40 @@ nav {
 
 		&__title {
 			width: 80%;
-			font-size: 3rem;
+			font-size: 3.5rem;
 		}
 
 		&__desc {
 			width: 80%;
+		}
+	}
+
+	.features {
+		text-align: left;
+		transform: translateY(-25%);
+		position: relative;
+		z-index: -1000;
+
+		&__title {
+			font-size: 2.2rem;
+		}
+
+		&__desc {
+			width: 50%;
+		}
+
+		&__cards {
+			display: flex;
+			flex-direction: row;
+		}
+
+		&__card {
+			margin-right: 4rem;
+		}
+
+		&__card--title {
+			font-size: 1.5rem;
+			margin-bottom: 1.5rem;
 		}
 	}
 }

@@ -28,6 +28,8 @@ h6 {
 p {
   margin-top: 1rem;
   margin-bottom: 1rem;
+  color: #9698a6;
+  line-height: 1.5;
 }
 
 ul {
@@ -121,13 +123,31 @@ nav {
   margin-top: -8.5rem;
 }
 .hero__title {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 2rem;
 }
 .hero__desc {
-  color: #9698a6;
   margin-bottom: 2rem;
   line-height: 1.5;
+}
+
+.features {
+  background-color: #f3f4f6;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  text-align: center;
+}
+.features__text {
+  margin-bottom: 4rem;
+}
+.features__title {
+  font-size: 2rem;
+}
+.features__card--desc {
+  font-size: 1rem;
+}
+.features__img {
+  margin-bottom: 1.5rem;
 }
 
 @media only screen and (min-width: 770px) {
@@ -185,10 +205,34 @@ nav {
   }
   .hero__title {
     width: 80%;
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   .hero__desc {
     width: 80%;
+  }
+
+  .features {
+    text-align: left;
+    transform: translateY(-25%);
+    position: relative;
+    z-index: -1000;
+  }
+  .features__title {
+    font-size: 2.2rem;
+  }
+  .features__desc {
+    width: 50%;
+  }
+  .features__cards {
+    display: flex;
+    flex-direction: row;
+  }
+  .features__card {
+    margin-right: 4rem;
+  }
+  .features__card--title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 }
 
