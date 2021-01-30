@@ -62,7 +62,7 @@ img {
 }
 
 .cta {
-	padding: 0.7rem 1.4rem;
+	padding: 1rem 2rem 1rem 2rem;
 	border-radius: 3rem;
 	color: $white;
 	background-image: $gradient;
@@ -71,6 +71,7 @@ img {
 	width: max-content;
 	transition: box-shadow 450ms ease-in-out;
 	cursor: pointer;
+	font-weight: 600;
 }
 
 nav {
@@ -107,8 +108,39 @@ nav {
 	display: none;
 }
 
-.nav__links a {
-	text-decoration: none;
+.mobile {
+	text-align: center;
+	background-color: $white;
+	display: block;
+	position: absolute;
+	z-index: 5;
+	top: 5rem;
+	right: 3rem;
+	left: 3rem;
+	height: 280px;
+	margin: 0 auto;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	border-radius: 5px;
+	box-shadow: 0px 20px 200px $darkBlue;
+	transition: all 10000s ease-in;
+
+	li {
+		padding: 0.4rem 0;
+	}
+
+	li a {
+		text-decoration: none;
+		color: $darkBlue;
+	}
+
+	li a:hover {
+		color: $limeGreen;
+	}
+
+	li + li {
+		margin-top: 1rem;
+	}
 }
 
 .hero {
@@ -254,6 +286,10 @@ nav {
 }
 
 @media only screen and (min-width: 770px) {
+	nav {
+		padding-bottom: 0.5rem;
+	}
+
 	.navbar {
 		justify-content: space-between;
 		align-items: center;
@@ -263,6 +299,14 @@ nav {
 		display: none;
 	}
 
+	.cta {
+		transition: all 100ms ease-in;
+	}
+
+	.cta:hover {
+		opacity: 0.5;
+	}
+
 	.nav__cta {
 		display: inline-block;
 	}
@@ -270,6 +314,8 @@ nav {
 	.nav__links {
 		display: flex;
 		flex-direction: row;
+		align-items: center;
+		padding-top: 1.2rem;
 
 		& li + li {
 			margin-left: 2rem;
@@ -279,7 +325,18 @@ nav {
 			color: $grayishBlue;
 			letter-spacing: -1px;
 			position: relative;
+			text-decoration: none;
 		}
+	}
+
+	.nav__link {
+		padding-bottom: 1.5rem;
+		border-bottom: 5px solid transparent;
+		cursor: pointer;
+	}
+
+	.nav__link:hover {
+		border-bottom: 5px solid $limeGreen;
 	}
 
 	.hero {
