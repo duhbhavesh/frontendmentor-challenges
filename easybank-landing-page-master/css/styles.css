@@ -102,11 +102,9 @@ nav {
   position: relative;
   padding-bottom: 3rem;
 }
-
 .hero__text {
   padding-top: 2rem;
 }
-
 .hero__content .hero__img .hero__img--bg {
   background-image: url("/images/bg-intro-mobile.svg");
   background-repeat: no-repeat;
@@ -119,16 +117,13 @@ nav {
   height: 69%;
   z-index: -1;
 }
-
 .hero__content .hero__img .hero__img--mockup {
   margin-top: -8.5rem;
 }
-
 .hero__title {
   font-size: 2rem;
   margin-bottom: 2rem;
 }
-
 .hero__desc {
   color: #9698a6;
   margin-bottom: 2rem;
@@ -153,11 +148,9 @@ nav {
     display: flex;
     flex-direction: row;
   }
-
   .nav__links li + li {
     margin-left: 2rem;
   }
-
   .nav__links li a {
     color: #9698a6;
     letter-spacing: -1px;
@@ -168,39 +161,32 @@ nav {
     flex-direction: row;
     padding-bottom: 0;
   }
-
   .hero__text {
     max-width: 50%;
     text-align: left;
     padding-right: 5rem;
     padding-top: 12rem;
   }
-
   .hero__img {
     max-width: 45%;
   }
-
   .hero__content .hero__img .hero__img--bg {
     left: 40vw;
     background-image: url("../images/bg-intro-desktop.svg");
     background-position: 0rem -18rem;
     height: 100%;
   }
-
   .hero__content .hero__img .hero__img--mockup {
     margin-top: -5rem;
     margin-right: -10rem;
   }
-
   .hero__content .hero__img .hero__img--mock {
     margin-left: 10rem;
   }
-
   .hero__title {
     width: 80%;
     font-size: 3rem;
   }
-
   .hero__desc {
     width: 80%;
   }
