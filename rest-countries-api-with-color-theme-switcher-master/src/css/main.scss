@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+// COLORS
+$dm-elem: #2b3945;
+$dm-bg: #202c37;
+
+$lm-elem: hsl(0, 0%, 100%);
+$lm-input: hsl(0, 0%, 52%);
+$lm-bg: #fafafa;
+
+$white: #ffffff;
+
+@mixin flexCenter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 14px;
+}
+
+body {
+	line-height: 1.4;
+	font-family: 'Nunito-sans', sans-serif;
+	background-color: $dm-bg;
+	color: $white;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+	display: inline-block;
+	cursor: pointer;
+	font-size: inherit;
+	color: inherit;
+}
+
+// UTILITIES
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.icon {
+	width: 1.2rem;
+	height: 1.2rem;
+	margin-right: 5px;
+	fill: currentColor;
+}
+
+button {
+	@include flexCenter;
+}
+
+// NAV
+.nav {
+	background-color: $dm-elem;
+	.container {
+		height: 10vh;
+		@include flexCenter;
+		justify-content: space-between;
+	}
+
+	&__logo {
+		cursor: pointer;
+	}
+}
+
+.nav-dm {
+	background-color: $dm-elem;
+	color: $white;
+}
+
+// HEADER
+.header {
+	padding: 2rem 0;
+	.container {
+		min-height: 90vh;
+	}
+}
+
+// SEARCH
+.search {
+	@include flexCenter;
+	justify-content: space-between;
+	height: 10vh;
+
+	@media only screen and(max-width:600px) {
+		flex-direction: column;
+		margin-bottom: 3rem;
+		align-items: flex-start;
+	}
+	&__field {
+		position: relative;
+		background-color: $dm-elem;
+		@include flexCenter;
+		justify-content: space-around;
+		padding: 0 1.4rem;
+		border-radius: 5px;
+
+		@media only screen and(max-width:600px) {
+			width: 100%;
+			margin-bottom: 1rem;
+		}
+	}
+
+	&__input {
+		flex: 1;
+		font-size: inherit;
+		font-family: inherit;
+		background-color: transparent;
+		border: none;
+		color: inherit;
+		padding: 1rem;
+		display: block;
+		width: 18rem;
+
+		@media only screen and(max-width:600px) {
+			width: 100%;
+		}
+	}
+
+	&__region {
+		width: 15rem;
+		display: block;
+		padding: 1rem;
+		border-radius: 5px;
+		border: none;
+		background-color: $dm-elem;
+		color: $white;
+		appearance: none;
+		font-family: inherit;
+		font-size: inherit;
+		cursor: pointer;
+	}
+
+	&__type {
+		position: relative;
+		border: none;
+	}
+	.down {
+		position: absolute;
+		top: 50%;
+		right: 10px;
+		transform: translateY(-50%);
+		pointer-events: none;
+	}
+}
+
+// COUNTRIES
+.countries {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+	gap: 4rem;
+	padding: 2rem 0;
+	justify-items: center;
+}
+
+// CARD
+.card {
+	width: 100%;
+	height: 25rem;
+	background-color: $dm-elem;
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 0 1px 2px rgba(black, 0.2);
+
+	@media only screen and(max-width:600px) {
+		width: 70%;
+	}
+
+	&__cover {
+		height: 50%;
+	}
+	&__img {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+
+	&__text {
+		height: 50%;
+		padding: 1.5rem;
+	}
+
+	&__name {
+		margin-bottom: 1.5rem;
+	}
+
+	p {
+		font-weight: 500;
+	}
+}
+
+// RESULT
+.back {
+	width: 10rem;
+	background-color: $dm-elem;
+	padding: 1rem;
+	border-radius: 5px;
+	box-shadow: 0 0px 4px rgba($dm-elem, 0.2);
+	margin-bottom: 4rem;
+
+	&:hover {
+		background-color: lighten($dm-bg, 10%);
+	}
+}
+
+.result {
+	min-height: 90vh;
+	padding: 2rem 0;
+}
+
+.details {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 3rem;
+	width: 100%;
+	@media only screen and(max-width:600px) {
+		grid-template-columns: 1fr;
+		justify-items: start;
+	}
+	&__cover {
+		width: 100%;
+		height: 25rem;
+		@media only screen and (max-width: 600px) {
+			width: 23rem;
+			height: 20rem;
+		}
+	}
+
+	&__img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	&__related {
+		display: flex;
+		justify-items: start;
+		flex-wrap: wrap;
+		align-items: center;
+
+		& > * {
+			margin: 5px;
+		}
+
+		span {
+			display: block;
+
+			@media only screen and(max-width:600px) {
+				grid-column: 1/-1;
+			}
+		}
+
+		.back {
+			padding: 0.4rem 3rem;
+		}
+	}
+
+	&__relation {
+		background-color: $dm-elem;
+		padding: 0.5rem;
+		border-radius: 5px;
+		width: max-content;
+
+		&:hover {
+			background-color: lighten($dm-elem, 10%);
+		}
+	}
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	&__name {
+		margin-bottom: 2rem;
+		font-size: 2.5rem;
+	}
+
+	&__info {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(5, 1fr);
+		grid-auto-flow: column;
+		font-weight: 500;
+		grid-gap: 0.6rem;
+		margin-bottom: 1rem;
+
+		@media only screen and(max-width:600px) {
+			grid-template-columns: 1fr;
+			grid-auto-flow: row;
+			gap: 1rem;
+		}
+	}
+
+	&__key {
+		color: red;
+	}
+
+	&__value {
+		color: red;
+	}
+
+	.space {
+		@media only screen and(max-width:600px) {
+			height: 3rem;
+		}
+	}
+}
+
+.nav,
+.search__field,
+.search__region,
+.card,
+.back,
+.details__relation {
+	transition: 300ms linear;
+}
+
+.error-message {
+	border: 2px solid currentColor;
+	color: crimson;
+	text-align: center;
+	border-radius: 10px;
+	padding: 0.5rem;
+}
+
+// STATE CLASSES
+
+.lightModeBg {
+	background-color: $lm-bg;
+	color: black !important;
+}
+
+.lightModeNav {
+	background-color: $lm-bg;
+}
+
+.lightMode {
+	background-color: $lm-elem !important;
+	color: black;
+}
+
+a.lightMode {
+	&:hover {
+		background-color: darken($lm-bg, 10%);
+	}
+}
+
+.lightMode2 {
+	background-color: $lm-elem !important;
+
+	&:hover {
+		background-color: darken($lm-elem, 10%);
+	}
+}

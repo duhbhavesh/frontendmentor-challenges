@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 
-import icons from '../images/icons.svg';
+import icons from '../img/icons.svg';
 import { CountryContext } from '../contexts/CountryContext';
 import { ThemeContext } from '../contexts/ThemeContext';
 

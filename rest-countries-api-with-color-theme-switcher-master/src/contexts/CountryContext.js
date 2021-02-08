@@ -9,15 +9,16 @@ export default function CountryContextProvider(props) {
 
 	async function fetchCountries() {
 		try {
-			const response = await fetch('https://restcountries.eu/rest/v2/all');
+			const response = await fetch(`https://restcountries.eu/rest/v2/all`);
 			const data = await response.json();
+
 			setCountries(data);
 
 			setCountryNames(
 				data.map((country) => {
 					return {
 						name: country.name,
-						code: country.alpha3code,
+						code: country.alpha3Code,
 					};
 				}),
 			);

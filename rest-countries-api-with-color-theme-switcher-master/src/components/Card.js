@@ -11,21 +11,22 @@ export default function Card({ details }) {
 			className={lightMode ? 'card lightMode' : 'card'}
 			to={`/country/${details.alpha3Code}`}>
 			<div className='card__cover'>
-				<img src={details.img} alt={details.name}></img>
+				<img src={details.flag} alt={details.name} className='card__img' />
 			</div>
 			<div className='card__text'>
 				<h3 className='card__name'>{details.name}</h3>
 				<p className='card__population'>
-					Population:{' '}
+					<b>Population</b>:{' '}
 					<span className='population-count'>
 						{Number(details.population).toLocaleString()}
 					</span>
 				</p>
 				<p className='card__region'>
-					Region: <span className='region-name'>{details.region}</span>
+					<b>Region</b>: <span className='region-name'>{details.region}</span>
 				</p>
 				<p className='card__capital'>
-					Capital: <span className='capital-name'>{details.capital}</span>
+					<b>Capital</b>:{' '}
+					<span className='capital-name'>{details.capital}</span>
 				</p>
 			</div>
 		</Link>

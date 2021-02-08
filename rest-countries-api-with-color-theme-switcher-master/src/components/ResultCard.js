@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { CountryContext } from '../contexts/CountryContext';
 import CountryButton from './CountryButton';
+import Loader from './Loader';
 
 export default function ResultCard({ country }) {
 	const { countryNames } = useContext(CountryContext);
@@ -15,13 +16,14 @@ export default function ResultCard({ country }) {
 						code = countryCode;
 					}
 				});
+
 				return <CountryButton code={code} name={name} key={code} />;
 			})
 		) : (
 			<span>No Border Countries</span>
 		);
 
-	return country(
+	return country ? (
 		<div className='details'>
 			<div className='details__cover'>
 				<img
@@ -34,33 +36,45 @@ export default function ResultCard({ country }) {
 			<div className='details__text'>
 				<h3 className='details__name'>{country.name}</h3>
 				<div className='details__info'>
-					<p className='details__native'>Native Name:{country.nativeName}</p>
-					<p className='details__population'>
-						Population:{Number(country.population).toLocaleString()}
+					<p className='details__native'>
+						<b>Native Name</b>: {country.nativeName}
 					</p>
-					<p className='details__region'>Region:{country.region}</p>
-					<p className='details__subregion'>Sub Region: {country.subregion}</p>
-					<p className='details__capital'>Capital: {country.capital} </p>
+					<p className='details__population'>
+						<b>Population</b>: {Number(country.population).toLocaleString()}
+					</p>
+					<p className='details__region'>
+						<b>Region</b>: {country.region}
+					</p>
+					<p className='details__subregion'>
+						<b>Sub Region</b>: {country.subregion}
+					</p>
+					<p className='details__capital'>
+						<b>Capital</b>: {country.capital}{' '}
+					</p>
 					<div className='space'></div>
 					<p className='details__domain'>
-						Top Level Domain: {country.topLevelDomain}
+						<b>Top Level Domain</b>: {country.topLevelDomain}
 					</p>
 					<p className='details__currency'>
-						Currencies:
+						<b>Currencies</b>:{' '}
 						{country.currencies.map((item) => `${item.name} (${item.symbol})`)}
 					</p>
 					<p className='details__language'>
-						Languages:
+						<b>Languages</b>:{' '}
 						{country.languages.map((item) => item.name).join(',')}
 					</p>
 				</div>
 				<div className='space'></div>
 
 				<div className='details__related'>
-					<span>Border Countries:</span>
+					<span>
+						<b>Border Countries</b>:
+					</span>
 					{borderCountries}
 				</div>
 			</div>
-		</div>,
+		</div>
+	) : (
+		<Loader />
 	);
 }

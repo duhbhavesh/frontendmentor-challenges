@@ -1,11 +1,12 @@
-import { React } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import ThemeProvider from './contexts/ThemeContext';
 import CountryProvider from './contexts/CountryContext';
 import Nav from './components/Nav';
 import Header from './components/Header';
-import ResultCardDisplay from './components/ResultCardDisplay';
+import ResultDisplay from './components/ResultDisplay';
+import './css/main.scss';
 
 export default function App() {
 	return (
@@ -14,9 +15,8 @@ export default function App() {
 				<Router>
 					<Nav />
 					<Switch>
-						<Route exact path='/' component={Header}>
-							<Route path='/country/:id' component={ResultCardDisplay} />
-						</Route>
+						<Route exact path='/' component={Header} />
+						<Route path='/country/:id' component={ResultDisplay} />
 					</Switch>
 				</Router>
 			</CountryProvider>
